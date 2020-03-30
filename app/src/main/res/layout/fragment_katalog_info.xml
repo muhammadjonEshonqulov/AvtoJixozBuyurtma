@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#2196F3"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/rasm_"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/nexia_compressor"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_weight="1"
+                        android:text="Mashina turi : "
+                        android:layout_width="0dp"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/mashina_turi_"
+                        android:layout_weight="1"
+                        android:text="Mashina turi : "
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_weight="1"
+                        android:text="Extiyod qism : "
+                        android:layout_width="0dp"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/extiyod_qism_"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:text="Extiyod qism : "
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_weight="1"
+                        android:text="Narxi  : "
+                        android:layout_width="0dp"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/narxi_"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:text="Narxi : "
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_weight="1"
+                        android:text="Yetkazib berish kuni : "
+                        android:layout_width="0dp"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:text="Yetkazish kuni : "
+                        android:layout_width="0dp"
+                        android:id="@+id/yetkazish_kuni_"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:text="Sotib Olish"
+                    android:id="@+id/buy"
+                    android:layout_marginBottom="25dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

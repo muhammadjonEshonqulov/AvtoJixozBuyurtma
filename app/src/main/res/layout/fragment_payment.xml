@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/paymentActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00f"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/payment_type_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#10ea1f"
+            android:textSize="22sp" />
+
+    <TextView
+            android:id="@+id/xisob_raqam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Qabul qiluvchi : "
+            android:textColor="#fffa62"
+            android:textSize="22sp" />
+
+    <TextView
+            android:id="@+id/qabul_qiluvchi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="8600140220175017"
+            android:textColor="#fffa62"
+            android:textSize="22sp" />
+
+    <TextView
+            android:id="@+id/tolov_summasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#3085ed"
+            android:textSize="22sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PCP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parolingizni kiriting"
+                android:inputType="numberPassword"
+                android:shadowColor="#fff"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:visibility="visible" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:id="@+id/next__"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="?selectableItemBackground"
+                android:text="next\t\t"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
