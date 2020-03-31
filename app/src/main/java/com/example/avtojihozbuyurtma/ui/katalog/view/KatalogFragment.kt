@@ -6,7 +6,7 @@ import com.example.avtojihozbuyurtma.R
 import com.example.avtojihozbuyurtma.models.JixozData
 import com.example.avtojihozbuyurtma.repository.Repository
 import com.example.avtojihozbuyurtma.ui.katalog.presenter.KatalogPresenter
-import com.example.lesson40pdpfragmentssss.fragments.KatalogInfoFragment
+import com.example.avtojihozbuyurtma.ui.katalogInfo.view.KatalogInfoFragment
 import kotlinx.android.synthetic.main.fragment_katalog.*
 import uz.mahmudxon.library.ui.BaseFragment
 import uz.mahmudxon.library.util.toast

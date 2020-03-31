@@ -22,15 +22,15 @@ class SelectPaymentFragment() : BaseFragment(R.layout.fragment_select_payment, f
 
         payme?.setOnClickListener {
             Prefs.save(requireContext(), "tolov_turi", "PAYME")
-            addFragment(PaymentFragment(), jixozData, true)
+            startFragment(PaymentFragment(), jixozData, true)
         }
         click?.setOnClickListener {
             Prefs.save(requireContext(), "tolov_turi", "CLICK")
-            addFragment(PaymentFragment(), jixozData, true)
+            startFragment(PaymentFragment(), jixozData, true)
         }
         naqtpul?.setOnClickListener {
             Prefs.save(requireContext(), "tolov_turi", "NAQT")
-            addFragment(PaymentFragment(), jixozData, true)
+            startFragment(PaymentFragment(), jixozData, true)
         }
     }
 

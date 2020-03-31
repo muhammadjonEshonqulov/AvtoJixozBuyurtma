@@ -5,7 +5,7 @@ import com.example.avtojihozbuyurtma.R
 import uz.mahmudxon.library.ui.BaseFragment
 import java.util.*
 
-class AboutFragment : BaseFragment(R.layout.fragment_about, false) {
+class AboutFragment : BaseFragment(R.layout.fragment_about, true) {
 
     override fun onCreatedView(senderData: Any?) {
         activity?.title = "Muallif"
