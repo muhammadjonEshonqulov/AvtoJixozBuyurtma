@@ -21,34 +21,32 @@ class RegistrationFragment() : BaseFragment(R.layout.fragment_registration) {
         activity?.title = "Ro'yxatdan o'tish"
         val jixozData: JixozData = senderData as JixozData
 
+        var telNumber = ""
+        tel_nomer?.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
 
+            }
+
+            override fun beforeTextChanged(
+                s: CharSequence?,
+                start: Int,
+                count: Int,
+                after: Int
+            ) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                if (s != null) {
+                    telNumber = s.toString()
+                }
+            }
+
+        })
         next?.setOnClickListener {
-            var telNumber = ""
-            tel_nomer?.addTextChangedListener(object : TextWatcher {
-                override fun afterTextChanged(s: Editable?) {
 
-                }
-
-                override fun beforeTextChanged(
-                    s: CharSequence?,
-                    start: Int,
-                    count: Int,
-                    after: Int
-                ) {
-
-                }
-
-                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                    if (s != null) {
-                        toast("s")
-                        telNumber = s.toString()
-                    }
-                }
-
-            })
             if (last_name.text.toString().isNotEmpty() && first_name.text.toString().isNotEmpty() && tel_nomer.text.toString().isNotEmpty()) {
                 Prefs.clear(requireContext())
-                Log.i("TTT","tel nomer  : $telNumber")
                 Prefs.save(requireContext(), "last_name", last_name.text.toString())
                 Prefs.save(requireContext(), "first_name", first_name.text.toString())
                 Prefs.save(requireContext(), "tel_number", tel_nomer.text.toString())
