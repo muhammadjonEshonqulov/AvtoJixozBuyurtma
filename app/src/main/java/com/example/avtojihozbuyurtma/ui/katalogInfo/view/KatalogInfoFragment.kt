@@ -18,7 +18,7 @@ class KatalogInfoFragment() : BaseFragment(R.layout.fragment_katalog_info,false)
         mashina_turi_?.text = jixozData.mashina_turi
         extiyod_qism_?.text = jixozData.extiyod_qism
         narxi_?.text = jixozData.narx
-        yetkazish_kuni_?.text = jixozData.yetkazish_kuni + " kun"
+        yetkazish_kuni_?.text = jixozData.yetkazish_kuni + " soat"
 
         buy?.setOnClickListener {
             startFragment(RegistrationFragment(), jixozData, true)

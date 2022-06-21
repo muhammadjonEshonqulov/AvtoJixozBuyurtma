@@ -16,6 +16,6 @@ class OrderAdapter : SingleTypeAdapter<OrderData>(R.layout.item_buyurtna, ArrayL
             "${position + 1}.Buyurtmachi malumotlari:\nFamiliyasi : " + data[position].fam + "\nIsmi : " + data[position].ism + "\nTel nomer:" +
                     data[position].tel_nomer + "\nBuyurtma ma'lumotlari:\nMashina turi:" + data[position].mashina_turi +
                     "\nExtiyod qism:" + data[position].extiyod_qism + "\nNarxi:" + data[position].narx + "\nYetkazib berish vaqti:" +
-                    data[position].yetkazish_kuni + " kun\nTo'lov turi:" + data[position].tolov_turi + "\nTo'langanligi:" + data[position].tolanganligi
+                    data[position].yetkazish_kuni + " soat\nTo'lov turi:" + data[position].tolov_turi + "\nTo'langanligi:" + data[position].tolanganligi
     }
 }
